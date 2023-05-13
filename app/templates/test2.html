@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>粒子测试</title>
+    <!-- 引入 particles-bg -->
+    <script src="static/particles-bg.min.js"></script>
+</head>
+<body>
+<div id="particles-bg"></div>
+
+<!-- 调用 ParticlesBg() 函数 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof ParticlesBg === 'function') {
+      new ParticlesBg().init({
+        type: 'circle',
+        num: 50,
+        color: '#ffffff',
+        selector: '#particles-bg'
+      });
+    } else {
+      console.error('particles-bg 文件未正确加载，请检查文件路径是否正确。');
+    }
+  });
+</script>
+
+</body>
+</html>

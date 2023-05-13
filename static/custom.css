@@ -1,0 +1,32 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* 修改导航栏背景色为渐变 */
+.navbar.bg-primary {
+  background-image: linear-gradient(to right, #0062cc, #007bff);
+}
+
+/* 添加一些与 AI 和艺术相关的元素 */
+.jumbotron-fluid {
+  background-image: url('/static/images/ai_art.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

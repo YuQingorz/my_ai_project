@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>粒子测试</title>
+    <!-- 引入 particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        #particles-js { position: absolute; width: 100%; height: 100%; }
+    </style>
+</head>
+<body>
+<div id="particles-js"></div>
+
+<!-- 调用 particlesJS() 函数 -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof particlesJS === 'function') {
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 50,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          }
+        }
+      }
+    });
+  } else {
+    console.error('particles.js 文件未正确加载，请检查文件路径是否正确。');
+  }
+});
+</script>
+
+</body>
+</html>
