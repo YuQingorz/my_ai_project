@@ -18,6 +18,10 @@
       },
       "polygon": {
         "nb_sides": 5
+        "style": {
+          "bottom": "0",
+          "zIndex": "-2"
+        }
       },
       "image": {
         "src": "img/github.svg",
