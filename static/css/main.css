@@ -1,3 +1,4 @@
+/* 导航栏样式调整 */
 .navbar {
   background-color: #34495e;
 }
@@ -13,6 +14,7 @@
   text-decoration: underline;
 }
 
+/* 内容区块设计 */
 .content-block {
   background-color: #f1f1f1;
   padding: 20px;
@@ -38,6 +40,7 @@
   margin: 10px 0;
 }
 
+/* 修饰按钮和表单元素 */
 .button {
   background-color: #34495e;
   color: white;
