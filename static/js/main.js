@@ -10,3 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
     polygonCanvas.style.zIndex = '-2';
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight / 2, // 将高度设置为窗口高度的一半
+    });
+    const patternDiv = document.getElementById('trianglify-pattern');
+    if (patternDiv) {
+        patternDiv.style.backgroundImage = `url(${pattern.png()})`;
+    }
+});
